@@ -1,0 +1,32 @@
+.loading-container {
+    margin: auto;
+}
+
+.loading {
+    width: fit-content;
+    margin: auto;
+}
+
+.loading span {
+    background-color: rgb(52, 202, 88);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: dots 2s ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: .8s;
+}
+
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
+    }
+}
